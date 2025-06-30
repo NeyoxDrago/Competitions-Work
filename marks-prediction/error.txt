@@ -1,0 +1,101 @@
+C:\Users\abubakar>heroku logs --app marks-predictions
+2020-07-13T10:55:09.364569+00:00 app[web.1]: [2020-07-13 10:55:09 +0000] [11] [ERROR] Exception in worker process
+2020-07-13T10:55:09.364588+00:00 app[web.1]: Traceback (most recent call last):
+2020-07-13T10:55:09.364590+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+2020-07-13T10:55:09.364591+00:00 app[web.1]: worker.init_process()
+2020-07-13T10:55:09.364591+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/gunicorn/workers/base.py", line 129, in init_process
+2020-07-13T10:55:09.364591+00:00 app[web.1]: self.load_wsgi()
+2020-07-13T10:55:09.364592+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+2020-07-13T10:55:09.364592+00:00 app[web.1]: self.wsgi = self.app.wsgi()
+2020-07-13T10:55:09.364593+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+2020-07-13T10:55:09.364593+00:00 app[web.1]: self.callable = self.load()
+2020-07-13T10:55:09.364594+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
+2020-07-13T10:55:09.364594+00:00 app[web.1]: return self.load_wsgiapp()
+2020-07-13T10:55:09.364594+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+2020-07-13T10:55:09.364595+00:00 app[web.1]: return util.import_app(self.app_uri)
+2020-07-13T10:55:09.364595+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/gunicorn/util.py", line 350, in import_app
+2020-07-13T10:55:09.364595+00:00 app[web.1]: __import__(module)
+2020-07-13T10:55:09.364596+00:00 app[web.1]: File "/app/app.py", line 2, in <module>
+2020-07-13T10:55:09.364596+00:00 app[web.1]: from sklearn.externals import joblib
+2020-07-13T10:55:09.364673+00:00 app[web.1]: ImportError: cannot import name 'joblib'
+2020-07-13T10:55:09.365556+00:00 app[web.1]: [2020-07-13 10:55:09 +0000] [11] [INFO] Worker exiting (pid: 11)
+2020-07-13T10:55:09.370073+00:00 app[web.1]: [2020-07-13 10:55:09 +0000] [10] [ERROR] Exception in worker process
+2020-07-13T10:55:09.370074+00:00 app[web.1]: Traceback (most recent call last):
+2020-07-13T10:55:09.370075+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+2020-07-13T10:55:09.370076+00:00 app[web.1]: worker.init_process()
+2020-07-13T10:55:09.370076+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/gunicorn/workers/base.py", line 129, in init_process
+2020-07-13T10:55:09.370077+00:00 app[web.1]: self.load_wsgi()
+2020-07-13T10:55:09.370077+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+2020-07-13T10:55:09.370077+00:00 app[web.1]: self.wsgi = self.app.wsgi()
+2020-07-13T10:55:09.370078+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+2020-07-13T10:55:09.370078+00:00 app[web.1]: self.callable = self.load()
+2020-07-13T10:55:09.370079+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
+2020-07-13T10:55:09.370079+00:00 app[web.1]: return self.load_wsgiapp()
+2020-07-13T10:55:09.370080+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+2020-07-13T10:55:09.370080+00:00 app[web.1]: return util.import_app(self.app_uri)
+2020-07-13T10:55:09.370080+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/gunicorn/util.py", line 350, in import_app
+2020-07-13T10:55:09.370081+00:00 app[web.1]: __import__(module)
+2020-07-13T10:55:09.370081+00:00 app[web.1]: File "/app/app.py", line 2, in <module>
+2020-07-13T10:55:09.370081+00:00 app[web.1]: from sklearn.externals import joblib
+2020-07-13T10:55:09.370086+00:00 app[web.1]: ImportError: cannot import name 'joblib'
+2020-07-13T10:55:09.371038+00:00 app[web.1]: [2020-07-13 10:55:09 +0000] [10] [INFO] Worker exiting (pid: 10)
+2020-07-13T10:55:39.552633+00:00 app[web.1]: [2020-07-13 10:55:39 +0000] [4] [INFO] Shutting down: Master
+2020-07-13T10:55:39.552779+00:00 app[web.1]: [2020-07-13 10:55:39 +0000] [4] [INFO] Reason: Worker failed to boot.
+2020-07-13T10:55:39.677066+00:00 heroku[web.1]: Process exited with status 3
+2020-07-13T10:55:39.781705+00:00 heroku[web.1]: State changed from up to crashed
+2020-07-13T11:05:38.764429+00:00 heroku[web.1]: State changed from crashed to starting
+2020-07-13T11:05:45.153289+00:00 heroku[web.1]: Starting process with command `gunicorn app:app`
+2020-07-13T11:05:47.623386+00:00 app[web.1]: [2020-07-13 11:05:47 +0000] [4] [INFO] Starting gunicorn 19.9.0
+2020-07-13T11:05:47.623998+00:00 app[web.1]: [2020-07-13 11:05:47 +0000] [4] [INFO] Listening at: http://0.0.0.0:25412 (4)
+2020-07-13T11:05:47.624108+00:00 app[web.1]: [2020-07-13 11:05:47 +0000] [4] [INFO] Using worker: sync
+2020-07-13T11:05:47.628044+00:00 app[web.1]: [2020-07-13 11:05:47 +0000] [10] [INFO] Booting worker with pid: 10
+2020-07-13T11:05:47.730045+00:00 app[web.1]: [2020-07-13 11:05:47 +0000] [11] [INFO] Booting worker with pid: 11
+2020-07-13T11:05:47.948229+00:00 heroku[web.1]: State changed from starting to up
+2020-07-13T11:05:50.259214+00:00 app[web.1]: [2020-07-13 11:05:50 +0000] [11] [ERROR] Exception in worker process
+2020-07-13T11:05:50.259269+00:00 app[web.1]: Traceback (most recent call last):
+2020-07-13T11:05:50.259271+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+2020-07-13T11:05:50.259272+00:00 app[web.1]: worker.init_process()
+2020-07-13T11:05:50.259272+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/gunicorn/workers/base.py", line 129, in init_process
+2020-07-13T11:05:50.259273+00:00 app[web.1]: self.load_wsgi()
+2020-07-13T11:05:50.259273+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+2020-07-13T11:05:50.259273+00:00 app[web.1]: self.wsgi = self.app.wsgi()
+2020-07-13T11:05:50.259274+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+2020-07-13T11:05:50.259275+00:00 app[web.1]: self.callable = self.load()
+2020-07-13T11:05:50.259275+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
+2020-07-13T11:05:50.259276+00:00 app[web.1]: return self.load_wsgiapp()
+2020-07-13T11:05:50.259276+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+2020-07-13T11:05:50.259276+00:00 app[web.1]: return util.import_app(self.app_uri)
+2020-07-13T11:05:50.259277+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/gunicorn/util.py", line 350, in import_app
+2020-07-13T11:05:50.259277+00:00 app[web.1]: __import__(module)
+2020-07-13T11:05:50.259277+00:00 app[web.1]: File "/app/app.py", line 2, in <module>
+2020-07-13T11:05:50.259278+00:00 app[web.1]: from sklearn.externals import joblib
+2020-07-13T11:05:50.259278+00:00 app[web.1]: ImportError: cannot import name 'joblib'
+2020-07-13T11:05:50.259648+00:00 app[web.1]: [2020-07-13 11:05:50 +0000] [10] [ERROR] Exception in worker process
+2020-07-13T11:05:50.259649+00:00 app[web.1]: Traceback (most recent call last):
+2020-07-13T11:05:50.259649+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+2020-07-13T11:05:50.259650+00:00 app[web.1]: worker.init_process()
+2020-07-13T11:05:50.259650+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/gunicorn/workers/base.py", line 129, in init_process
+2020-07-13T11:05:50.259650+00:00 app[web.1]: self.load_wsgi()
+2020-07-13T11:05:50.259651+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+2020-07-13T11:05:50.259651+00:00 app[web.1]: self.wsgi = self.app.wsgi()
+2020-07-13T11:05:50.259652+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+2020-07-13T11:05:50.259652+00:00 app[web.1]: self.callable = self.load()
+2020-07-13T11:05:50.259652+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
+2020-07-13T11:05:50.259653+00:00 app[web.1]: return self.load_wsgiapp()
+2020-07-13T11:05:50.259653+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+2020-07-13T11:05:50.259653+00:00 app[web.1]: return util.import_app(self.app_uri)
+2020-07-13T11:05:50.259654+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.6/site-packages/gunicorn/util.py", line 350, in import_app
+2020-07-13T11:05:50.259654+00:00 app[web.1]: __import__(module)
+2020-07-13T11:05:50.259654+00:00 app[web.1]: File "/app/app.py", line 2, in <module>
+2020-07-13T11:05:50.259655+00:00 app[web.1]: from sklearn.externals import joblib
+2020-07-13T11:05:50.259675+00:00 app[web.1]: ImportError: cannot import name 'joblib'
+2020-07-13T11:05:50.259968+00:00 app[web.1]: [2020-07-13 11:05:50 +0000] [11] [INFO] Worker exiting (pid: 11)
+2020-07-13T11:05:50.260483+00:00 app[web.1]: [2020-07-13 11:05:50 +0000] [10] [INFO] Worker exiting (pid: 10)
+2020-07-13T11:05:50.491764+00:00 app[web.1]: [2020-07-13 11:05:50 +0000] [4] [INFO] Shutting down: Master
+2020-07-13T11:05:50.492003+00:00 app[web.1]: [2020-07-13 11:05:50 +0000] [4] [INFO] Reason: Worker failed to boot.
+2020-07-13T11:05:50.585891+00:00 heroku[web.1]: Process exited with status 3
+2020-07-13T11:05:50.619024+00:00 heroku[web.1]: State changed from up to crashed
+2020-07-13T11:08:09.706216+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=marks-predictions.herokuapp.com request_id=63cb6310-7a8e-4ce6-a96f-2307c46c1d1d fwd="103.28.253.28" dyno= connect= service= status=503 bytes= protocol=https
+2020-07-13T11:08:10.358898+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=marks-predictions.herokuapp.com request_id=d4f95bad-f9d7-4677-8b7d-bdac870a4813 fwd="103.28.253.28" dyno= connect= service= status=503 bytes= protocol=https
+2020-07-13T11:11:57.574562+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=marks-predictions.herokuapp.com request_id=871fb441-e1b6-493c-b42c-a5fc70d8accf fwd="103.28.253.28" dyno= connect= service= status=503 bytes= protocol=https
+2020-07-13T11:11:57.905433+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=marks-predictions.herokuapp.com request_id=e3f4b175-dc66-429e-ab64-6c8b04279686 fwd="103.28.253.28" dyno= connect= service= status=503 bytes= protocol=https
